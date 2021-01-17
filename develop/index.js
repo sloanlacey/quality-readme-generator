@@ -19,20 +19,16 @@ const questions = [
         message: 'What is your email?'
     }, {
         type: 'input',
-        name: 'project name',
+        name: 'projectName',
         message: 'What is the name of this project?'
     }, {
         type: 'input',
-        name: 'project description',
-        message: 'Please describe the project.'
-    }, {
-        type: 'input',
-        name: 'installation',
-        message: 'How can a user install this application?'
+        name: 'projectDescription',
+        message: 'Please provide a description of the project.'
     }, {
         type: 'input',
         name: 'usage',
-        message: 'How can this application used?'
+        message: 'Please provide usage instructions for this application.'
     }, {
         type: 'input',
         name: 'installation',
@@ -47,20 +43,37 @@ const questions = [
         message: 'Please provide guidelines for contributing to this project.'
     }, {
         type: 'input',
-        name: 'installation',
-        message: 'How can a user install this application?'
-    }, {
-        type: 'input',
         name: 'license',
-        message: 'How is this project licensed?'
-    }
+        message: 'How is this project licensed?',
+        choices: [
+            'MIT',
+            'Apache',
+            'Mozilla Public License',
+            'Amazon',
+            'Microsoft'
+        ],
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if(err) {
+            return console.log(err);
+        }
+        console.log('Excellent! Your new README.md file has been generated.')
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((responses) => {
+        console.log(responses);
+        writeToFile('README.md', generate({...responses}));
+    })
+
+}
 
 // Function call to initialize app
 init();
