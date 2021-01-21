@@ -18,7 +18,7 @@ const choices = {
     link: '[Mozilla](https://opensource.org/licenses/MPL-2.0)',
   },
   None: {
-    badge: '',
+    badge: 'None',
     link: '',
   },
 }
@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  const section = `${renderLicenseLink(license)} ${renderLicenseBadge(license)}`;
+  const section = `${renderLicenseBadge(license)}\n[${renderLicenseLink(license)}]`;
   return section;
 }
 

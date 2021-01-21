@@ -44,7 +44,7 @@ const questions = [
     }, {
         type: 'list',
         name: 'license',
-        message: 'How is this project licensed?',
+        message: 'Which license are you using?',
         choices: [
             'MIT',
             'Apache',
@@ -70,7 +70,7 @@ function init() {
     inquirer.prompt(questions)
     .then((responses) => {
         console.log('inquiry response: ', responses);
-        writeToFile('newREADME.md', generateMarkdown({...responses}));
+        writeToFile('generatedREADME.md', generateMarkdown({...responses}));
     })
 
 }
