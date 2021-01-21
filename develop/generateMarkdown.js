@@ -9,6 +9,18 @@ const choices = {
     badge: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
     link: '[Apache](https://opensource.org/licenses/Apache-2.0)',
   },
+  BSD: {
+    badge: '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+    link: '[BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)',
+  },
+  Mozilla: {
+    badge: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+    link: '[Mozilla](https://opensource.org/licenses/MPL-2.0)',
+  },
+  None: {
+    badge: '',
+    link: '',
+  },
 }
 function renderLicenseBadge(license) {
   // console.log('license: ', license);
@@ -24,7 +36,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  const section = `- ${renderLicenseLink(license)} ${renderLicenseBadge(license)}`;
+  const section = `${renderLicenseLink(license)} ${renderLicenseBadge(license)}`;
   return section;
 }
 

@@ -48,9 +48,9 @@ const questions = [
         choices: [
             'MIT',
             'Apache',
-            'Mozilla Public License 2.0',
-            'BSD 3-Clause',
-            'No License'
+            'BSD',
+            'Mozilla',
+            'None'
         ],
     },
 ];
@@ -70,7 +70,7 @@ function init() {
     inquirer.prompt(questions)
     .then((responses) => {
         console.log('inquiry response: ', responses);
-        writeToFile('thisREADME.md', generateMarkdown({...responses}));
+        writeToFile('newREADME.md', generateMarkdown({...responses}));
     })
 
 }

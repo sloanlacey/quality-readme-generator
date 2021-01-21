@@ -5,6 +5,7 @@
 This is a command line application that generates quality readme files based on user input. 
 
 ## Table of contents
+
 - [General Info](#general-info)
 - [Video Demo](#video-demo)
 - [Technologies](#technologies)
