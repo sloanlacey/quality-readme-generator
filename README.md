@@ -34,9 +34,9 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Video Demo
+## Usage Instructions
 
-Coming soon!
+[Video Demonstration](https://drive.google.com/file/d/1pKnTTSrV4G0AGgbbP5uQZ_ipdCOMyYVF/view)
 
 ## Technologies
 
