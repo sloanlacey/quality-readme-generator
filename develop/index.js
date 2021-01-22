@@ -12,15 +12,15 @@ const questions = [
     {
         type: 'input',
         name: 'name',
-        message: 'What is your name?'
+        message: 'What is the name of the author?'
     }, {
         type: 'input',
         name: 'github',
-        message: 'What is your github url?'
+        message: 'What is the github url for the author?'
     }, {
         type: 'input',
         name: 'projectName',
-        message: 'What is the name of this project?'
+        message: 'What is the name of this project (it should match the name on the repository)?'
     }, {
         type: 'input',
         name: 'projectDescription',
@@ -70,7 +70,7 @@ function init() {
     inquirer.prompt(questions)
     .then((responses) => {
         console.log('inquiry response: ', responses);
-        writeToFile('generatedREADME.md', generateMarkdown({...responses}));
+        writeToFile('yourREADME.md', generateMarkdown({...responses}));
     })
 
 }
