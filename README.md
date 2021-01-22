@@ -7,7 +7,9 @@ This is a command line application that generates quality readme files based on 
 ## Table of contents
 
 - [General Info](#general-info)
-- [Video Demo](#video-demo)
+- [Raw Generated Readme File](#raw-generated-readme-file)
+- [Preview Readme](#preview-readme)
+- [Usage Instructions](#usage-instructions)
 - [Technologies](#technologies)
 - [Summary](#summary)
 - [Author](#author)
@@ -33,6 +35,14 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
+## Raw Generated Readme File
+
+![Raw README File](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/rawreadmeexample.png)
+
+## Preview Readme
+
+![Preview README](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/previewreadme.png)
 
 ## Usage Instructions
 
