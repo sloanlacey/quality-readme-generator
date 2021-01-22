@@ -38,7 +38,7 @@ THEN I am taken to the corresponding section of the README
 
 ![Demo](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/quality-readme-generator.gif)
 
-[Video Demonstration](https://drive.google.com/file/d/1pKnTTSrV4G0AGgbbP5uQZ_ipdCOMyYVF/view)
+Click [here](https://drive.google.com/file/d/1pKnTTSrV4G0AGgbbP5uQZ_ipdCOMyYVF/view) for a full video demonstration.
 
 ## Technologies
 
