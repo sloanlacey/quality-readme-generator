@@ -36,6 +36,8 @@ THEN I am taken to the corresponding section of the README
 
 ## Usage Instructions
 
+![Demo](https://github.com/sloanlacey/quality-readme-generator/blob/main/images/quality-readme-generator.gif)
+
 [Video Demonstration](https://drive.google.com/file/d/1pKnTTSrV4G0AGgbbP5uQZ_ipdCOMyYVF/view)
 
 ## Technologies
