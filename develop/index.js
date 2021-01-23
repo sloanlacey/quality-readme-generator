@@ -42,6 +42,10 @@ const questions = [
         name: 'contribute',
         message: 'Please provide guidelines for contributing to this project.'
     }, {
+        type: 'input',
+        name: 'questions',
+        message: 'Please provide an email for users to send inquiries to.'
+    }, {
         type: 'list',
         name: 'license',
         message: 'Which license are you using?',
@@ -70,7 +74,7 @@ function init() {
     inquirer.prompt(questions)
     .then((responses) => {
         console.log('inquiry response: ', responses);
-        writeToFile('yourREADME.md', generateMarkdown({...responses}));
+        writeToFile('generatedREADME.md', generateMarkdown({...responses}));
     })
 
 }

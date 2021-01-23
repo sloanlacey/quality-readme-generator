@@ -65,3 +65,7 @@ This project is created with:
 ## Author
 
 - [Sloan Lacey](https://github.com/sloanlacey/quality-readme-generator)
+
+## Questions?
+
+If you have questions about this application, please send an email to sloanlacey89@gmail.com, and I will get back to you as soon as possible.
